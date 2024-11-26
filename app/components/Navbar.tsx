@@ -9,9 +9,9 @@ const Navbar = () => {
     const pathname = usePathname();
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <nav className='flex items-center justify-center gap-7 h-5 p-7 mb-5 mt-5'>
-            <div className='px-4 py-4 '>
-                <h1 className='text-3xl font-serif'>
+        <nav className='flex items-center justify-center gap-7 h-max w-100 p-7  '>
+            <div className={`px-4 py-4 ${pathname === '/AddList' && ( ' underline underline-offset-4 ')} `}>
+                <h1 className='text-3xl font-serif '>
                     <Link href="/">TODO APP</Link>
                 </h1>
             </div>
